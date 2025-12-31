@@ -1,0 +1,114 @@
+[
+  {
+    "name": "Any / All Events",
+    "value": "*"
+  },
+  {
+    "name": "Self",
+    "value": "self"
+  },
+  {
+    "name": "Message Waiting",
+    "value": "message_waiting"
+  },
+  {
+    "name": "Session Status",
+    "value": "session_status"
+  },
+  {
+    "name": "Message",
+    "value": "message"
+  },
+  {
+    "name": "Message Reaction",
+    "value": "message_reaction"
+  },
+  {
+    "name": "Message Any",
+    "value": "message_any"
+  },
+  {
+    "name": "Message Ack",
+    "value": "message_ack"
+  },
+  {
+    "name": "Message Revoked",
+    "value": "message_revoked"
+  },
+  {
+    "name": "Message Edited",
+    "value": "message_edited"
+  },
+  {
+    "name": "Group V2 Join",
+    "value": "group_v2_join"
+  },
+  {
+    "name": "Group V2 Leave",
+    "value": "group_v2_leave"
+  },
+  {
+    "name": "Group V2 Update",
+    "value": "group_v2_update"
+  },
+  {
+    "name": "Group V2 Participants",
+    "value": "group_v2_participants"
+  },
+  {
+    "name": "Presence Update",
+    "value": "presence_update"
+  },
+  {
+    "name": "Poll Vote",
+    "value": "poll_vote"
+  },
+  {
+    "name": "Poll Vote Failed",
+    "value": "poll_vote_failed"
+  },
+  {
+    "name": "Chat Archive",
+    "value": "chat_archive"
+  },
+  {
+    "name": "Call Received",
+    "value": "call_received"
+  },
+  {
+    "name": "Call Accepted",
+    "value": "call_accepted"
+  },
+  {
+    "name": "Call Rejected",
+    "value": "call_rejected"
+  },
+  {
+    "name": "Label Upsert",
+    "value": "label_upsert"
+  },
+  {
+    "name": "Label Deleted",
+    "value": "label_deleted"
+  },
+  {
+    "name": "Label Chat Added",
+    "value": "label_chat_added"
+  },
+  {
+    "name": "Label Chat Deleted",
+    "value": "label_chat_deleted"
+  },
+  {
+    "name": "Event Response",
+    "value": "event_response"
+  },
+  {
+    "name": "Event Response Failed",
+    "value": "event_response_failed"
+  },
+  {
+    "name": "Engine Event",
+    "value": "engine_event"
+  }
+]
