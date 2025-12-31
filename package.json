@@ -1,0 +1,57 @@
+{
+	"name": "@kubex3/n8n-nodes-waha",
+	"version": "0.1.0",
+	"description": "n8n to connect with WAHA (Whatsapp HTTP API)",
+	"license": "MIT",
+	"homepage": "https://github.com/KubeX3/n8n-nodes-waha",
+	"keywords": [
+		"n8n-community-node-package",
+		"n8n-nodes-waha",
+		"waha"
+	],
+	"author": {
+		"name": "KubeX3",
+		"email": "kubex3.com@gmail.com"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/KubeX3/n8n-nodes-waha.git"
+	},
+	"scripts": {
+		"build": "n8n-node build",
+		"build:dev": "n8n-node build && docker compose restart n8n",
+		"build:watch": "tsc --watch",
+		"build:pre": "ts-node --transpile-only ./nodes-prebuild/nodes-prebuild.ts",
+		"dev": "n8n-node dev",
+		"lint": "n8n-node lint",
+		"lint:fix": "n8n-node lint --fix",
+		"release": "n8n-node release",
+		"prepublishOnly": "n8n-node prerelease"
+	},
+	"files": [
+		"dist"
+	],
+	"n8n": {
+		"n8nNodesApiVersion": 1,
+		"strict": true,
+		"credentials": [
+			"dist/credentials/WAHATriggerApiKey.credentials.js"
+		],
+		"nodes": [
+			"dist/nodes/WAHA/WAHATrigger.node.js"
+		],
+		"icons": [
+			"dist/icons/waha.svg"
+		]
+	},
+	"devDependencies": {
+		"@n8n/node-cli": "*",
+		"eslint": "9.32.0",
+		"prettier": "3.6.2",
+		"release-it": "^19.0.4",
+		"typescript": "5.9.2"
+	},
+	"peerDependencies": {
+		"n8n-workflow": "*"
+	}
+}

@@ -1,0 +1,36 @@
+services:
+  n8n:
+    image: docker.n8n.io/n8nio/n8n
+    container_name: n8n
+    restart: unless-stopped
+    networks:
+      n8n_network:
+        ipv4_address: 172.30.0.10
+    ports:
+      - "127.0.0.1:5678:5678"
+    environment:
+      GENERIC_TIMEZONE: ${GENERIC_TIMEZONE}
+      TZ: ${TZ}
+      N8N_ENFORCE_SETTINGS_FILE_PERMISSIONS: ${N8N_ENFORCE_SETTINGS_FILE_PERMISSIONS}
+      N8N_RUNNERS_ENABLED: ${N8N_RUNNERS_ENABLED}
+      N8N_HOST: ${N8N_HOST}
+      N8N_PORT: ${N8N_PORT}
+      WEBHOOK_URL: ${WEBHOOK_URL}
+      N8N_PROTOCOL: ${N8N_PROTOCOL}
+      N8N_EDITOR_BASE_URL: ${N8N_EDITOR_BASE_URL}
+      DB_SQLITE_POOL_SIZE: ${DB_SQLITE_POOL_SIZE}
+      N8N_BLOCK_ENV_ACCESS_IN_NODE: ${N8N_BLOCK_ENV_ACCESS_IN_NODE}
+      N8N_GIT_NODE_DISABLE_BARE_REPOS: ${N8N_GIT_NODE_DISABLE_BARE_REPOS}
+      N8N_COMMUNITY_PACKAGES_ENABLED: ${N8N_COMMUNITY_PACKAGES_ENABLED}
+      N8N_DEFAULT_BINARY_DATA_MODE: ${N8N_DEFAULT_BINARY_DATA_MODE}
+    volumes:
+      # - ./n8n_data:/home/node/.n8n
+      - ./dist:/home/node/.n8n/custom
+
+networks:
+  n8n_network:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 172.30.0.0/24
+          gateway: 172.30.0.1
