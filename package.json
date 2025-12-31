@@ -55,5 +55,8 @@
 	},
 	"peerDependencies": {
 		"n8n-workflow": "*"
+	},
+	"dependencies": {
+		"isbot": "^5.1.32"
 	}
 }
