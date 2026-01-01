@@ -193,11 +193,11 @@ function getInfo() {
 
     // Get webhook events & save
     const webhookEventsForTrigger: WebhookEvent[] = extractWebhookEvents(true);
-    saveDataToFile('./nodes/WAHA/waha-trigger', 'webhook-events.json', webhookEventsForTrigger);
+    saveDataToFile('./nodes/KubeX3WAHA/waha-trigger', 'webhook-events.json', webhookEventsForTrigger);
 
     // Get info
     const info = getInfo();
-    saveDataToFile('./nodes/WAHA', `info.json`, info);
+    saveDataToFile('./nodes/KubeX3WAHA', `info.json`, info);
 
   } catch (error: any) {
     console.error(`Runtime Error: ${error.message}`);
