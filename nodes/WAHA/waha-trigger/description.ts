@@ -23,7 +23,7 @@ export const credentialsProperty = (
     propertyName = 'authentication'
 ): INodeTypeDescription['credentials'] => [
 	{
-		name: 'wahaTriggerApiKey',
+		name: 'KubeX3WAHATriggerApiKey',
 		required: true,
 		displayOptions: {
 			show: {

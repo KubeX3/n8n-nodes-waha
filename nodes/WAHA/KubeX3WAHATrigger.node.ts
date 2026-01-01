@@ -71,10 +71,10 @@ const configuredOutputs = (parameters: INodeParameters) => {
 	}));
 };
 
-export class WAHATrigger implements INodeType {
+export class KubeX3WAHATrigger implements INodeType {
 	description: INodeTypeDescription = {
 		displayName: 'WAHA Trigger',
-		name: 'wahaTrigger',
+		name: 'KubeX3WAHATrigger',
 		icon: 'file:../../icons/waha.svg',
 		group: ['trigger'],
 		version: 1,

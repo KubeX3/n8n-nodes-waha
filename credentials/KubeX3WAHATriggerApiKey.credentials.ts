@@ -3,8 +3,8 @@ import {
 	INodeProperties,
 } from 'n8n-workflow';
 
-export class WAHATriggerApiKey implements ICredentialType {
-	name = 'wahaTriggerApiKey';
+export class KubeX3WAHATriggerApiKey implements ICredentialType {
+	name = 'KubeX3WAHATriggerApiKey';
 	displayName = 'WAHA Trigger API Key';
 	documentationUrl = 'https://waha.devlike.pro/docs/integrations/n8n';
 	icon = { light: 'file:../icons/waha.svg', dark: 'file:../icons/waha.svg' } as const;
