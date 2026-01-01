@@ -15,7 +15,7 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/KubeX3/n8n-nodes-waha.git"
+		"url": "git+https://github.com/KubeX3/n8n-nodes-waha.git"
 	},
 	"scripts": {
 		"build": "n8n-node build",
