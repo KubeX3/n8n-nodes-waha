@@ -43,6 +43,6 @@ jobs:
           npm version ${{ inputs.version }} --no-git-tag-version
 
       - name: Publish to NPM
-        run: npm publish --access public
+        run: npm publish --access public --ignore-scripts
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_ACCESS_TOKEN }}
