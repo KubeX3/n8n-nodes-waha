@@ -8,7 +8,11 @@ This is an n8n community node. It lets you use [WAHA (WhatsApp HTTP API)](https:
 
 **WAHA** (WhatsApp HTTP API) is a robust solution that provides a REST API for WhatsApp, allowing you to send and receive messages, manage sessions, and handle media programmatically.
 
-[n8n](https://n8n.io/) is a [fair-code licensed](https://docs.n8n.io/reference/license/) workflow automation platform.
+- [Github Repository](https://github.com/KubeX3/n8n-nodes-waha)
+
+- [NPM Registry](https://www.npmjs.com/package/@kubex3/n8n-nodes-waha)
+
+---
 
 [Installation](#installation)  
 [Operations](#operations)  
