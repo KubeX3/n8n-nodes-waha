@@ -3,7 +3,7 @@
 This is an n8n community node. It lets you use [WAHA (WhatsApp HTTP API)](https://waha.devlike.pro/) in your n8n workflows.
 
 <p align="center">
-  <img src="./README-imgs/WAHA+n8n.png" width='300'/>
+  <img src="https://github.com/KubeX3/n8n-nodes-waha/blob/main/README-imgs/WAHA%2Bn8n.png?raw=true" width='300'/>
 </p>
 
 **WAHA** (WhatsApp HTTP API) is a robust solution that provides a REST API for WhatsApp, allowing you to send and receive messages, manage sessions, and handle media programmatically.
@@ -68,7 +68,7 @@ If you have enabled "Header Authentication" in the node options, you will need t
 * **0.1.0** - Initial release featuring the Webhook Trigger node with advanced security (CORS, IP Whitelist) and custom routing options.
 
 ## Screenshots
-![alt text](README-imgs/trigger-ss-1.png)
-![alt text](README-imgs/trigger-ss-2.png)
-![alt text](README-imgs/trigger-ss-3.png)
-![alt text](README-imgs/trigger-credential-ss.png)
+![alt text](https://github.com/KubeX3/n8n-nodes-waha/blob/main/README-imgs/trigger-ss-1.png?raw=true)
+![alt text](https://github.com/KubeX3/n8n-nodes-waha/blob/main/README-imgs/trigger-ss-2.png?raw=true)
+![alt text](https://github.com/KubeX3/n8n-nodes-waha/blob/main/README-imgs/trigger-ss-3.png?raw=true)
+![alt text](https://github.com/KubeX3/n8n-nodes-waha/blob/main/README-imgs/trigger-credential-ss.png?raw=true)
