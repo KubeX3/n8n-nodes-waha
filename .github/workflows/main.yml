@@ -32,6 +32,11 @@ jobs:
 
       - name: Build
         run: npm run build
+      
+      - name: Remove unwanted files
+        run: |
+          rm -rf README-imgs
+          rm -rf nodes-prebuild
 
       - name: Update Version
         run: |
