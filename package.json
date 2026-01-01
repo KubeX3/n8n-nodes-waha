@@ -39,7 +39,7 @@
 			"dist/credentials/KubeX3WAHATriggerApiKey.credentials.js"
 		],
 		"nodes": [
-			"dist/nodes/WAHA/KubeX3WAHATrigger.node.js"
+			"dist/nodes/KubeX3WAHA/KubeX3WAHATrigger.node.js"
 		],
 		"icons": [
 			"dist/icons/waha.svg"
