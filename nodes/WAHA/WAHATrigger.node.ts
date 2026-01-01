@@ -234,13 +234,14 @@ export class WAHATrigger implements INodeType {
 		// ---------------------------------------------------------------
 		// Parse WAHA Event from Body and self inputs
 		const incomingEvent = bodyData.event as string;
-		const FormattedIncomingEvent = incomingEvent.replace(/\./g, '_');
-		const selfEvent = bodyData?.payload?.fromMe ?? false;
 
 		// Filtering Logic
 		if (!incomingEvent) {
 			return { noWebhookResponse: true };
 		}
+
+		const FormattedIncomingEvent = incomingEvent.replace(/\./g, '_');
+		const selfEvent = bodyData?.payload?.fromMe ?? false;
 
 		// ---------------------------------------------------------------
 		// Prepare Output
