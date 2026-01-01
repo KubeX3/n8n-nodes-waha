@@ -12,10 +12,10 @@ import {
 import { isbot } from 'isbot';
 import { 
 	authenticationProperty,
-	credentialsProperty, 
-	defaultWAHAWebhookTriggerDescription, 
-	optionsProperty, 
-	responseCodeOption, 
+	credentialsProperty,
+	defaultWAHATriggerDescription,
+	optionsProperty,
+	responseCodeOption,
 	responseModeProperty
 } from './waha-trigger/description';
 import { 
@@ -71,10 +71,10 @@ const configuredOutputs = (parameters: INodeParameters) => {
 	}));
 };
 
-export class KubeX3WAHATrigger implements INodeType {
+export class WAHATrigger implements INodeType {
 	description: INodeTypeDescription = {
 		displayName: 'WAHA Trigger',
-		name: 'KubeX3WAHATrigger',
+		name: 'WAHATrigger',
 		icon: 'file:../../icons/waha.svg',
 		group: ['trigger'],
 		version: 1,
@@ -89,7 +89,7 @@ export class KubeX3WAHATrigger implements INodeType {
 		// ---------------------------------------------------------
 		// Define the Webhook configuration
 		// ---------------------------------------------------------
-		webhooks: [defaultWAHAWebhookTriggerDescription],
+		webhooks: [defaultWAHATriggerDescription],
 		properties: [
 			// ---------------------------------------------------------
 			// WAHA Trigger settings.

@@ -126,7 +126,7 @@ export async function validateWahaWebhookAuth(
 
 		try {
 			// WAHA custom API key credential type
-			credentials = await ctx.getCredentials<ICredentialDataDecryptedObject>('KubeX3WAHATriggerApiKey');
+			credentials = await ctx.getCredentials<ICredentialDataDecryptedObject>('WAHATriggerApiKey');
 		} catch {
 			throw new WebhookAuthorizationError(
 				500,

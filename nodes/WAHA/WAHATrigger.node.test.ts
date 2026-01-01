@@ -1,5 +1,5 @@
 
-import { KubeX3WAHATrigger } from './KubeX3WAHATrigger.node';
+import { WAHATrigger } from './WAHATrigger.node';
 import {
 	IWebhookFunctions,
 } from 'n8n-workflow';
@@ -21,14 +21,14 @@ jest.mock('./waha-trigger/webhook-events.json', () => ({
 	],
 }), { virtual: true });
 
-describe('KubeX3WAHATrigger', () => {
-	let wahaTrigger: KubeX3WAHATrigger;
+describe('WAHATrigger', () => {
+	let wahaTrigger: WAHATrigger;
 	let mockWebhookFunctions: Partial<IWebhookFunctions>;
 	let mockReq: any;
 	let mockRes: any;
 
 	beforeEach(() => {
-		wahaTrigger = new KubeX3WAHATrigger();
+		wahaTrigger = new WAHATrigger();
 
 		mockReq = {
 			headers: {},

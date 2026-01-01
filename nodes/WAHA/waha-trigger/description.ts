@@ -5,7 +5,7 @@ import type {
 } from 'n8n-workflow';
 import { getResponseCode, getResponseData } from './utils';
 
-export const defaultWAHAWebhookTriggerDescription: IWebhookDescription = {
+export const defaultWAHATriggerDescription: IWebhookDescription = {
 	name: 'default',
     httpMethod: 'POST',
 	isFullPath: true,
@@ -23,7 +23,7 @@ export const credentialsProperty = (
     propertyName = 'authentication'
 ): INodeTypeDescription['credentials'] => [
 	{
-		name: 'KubeX3WAHATriggerApiKey',
+		name: 'WAHATriggerApiKey',
 		required: true,
 		displayOptions: {
 			show: {
